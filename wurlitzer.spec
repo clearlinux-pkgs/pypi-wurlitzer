@@ -4,7 +4,7 @@
 #
 Name     : wurlitzer
 Version  : 2.0.1
-Release  : 11
+Release  : 12
 URL      : https://files.pythonhosted.org/packages/02/2e/56d35781ef9ca92e26ff1fb3f351615a70083a95085d56d47451860925c5/wurlitzer-2.0.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/02/2e/56d35781ef9ca92e26ff1fb3f351615a70083a95085d56d47451860925c5/wurlitzer-2.0.1.tar.gz
 Summary  : Capture C-level output in context managers
