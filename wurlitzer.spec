@@ -4,7 +4,7 @@
 #
 Name     : wurlitzer
 Version  : 3.0.2
-Release  : 19
+Release  : 20
 URL      : https://files.pythonhosted.org/packages/e8/2c/3e57755689fcf75aa25f6afba064d3891e9864ef43a24745575c86b12ad4/wurlitzer-3.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e8/2c/3e57755689fcf75aa25f6afba064d3891e9864ef43a24745575c86b12ad4/wurlitzer-3.0.2.tar.gz
 Summary  : Capture C-level output in context managers
@@ -56,7 +56,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1636418943
+export SOURCE_DATE_EPOCH=1641418340
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -66,14 +66,14 @@ export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
 export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
-python3 setup.py build
+python3 -m build --wheel --skip-dependency-check --no-isolation
 
 %install
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/wurlitzer
 cp %{_builddir}/wurlitzer-3.0.2/LICENSE %{buildroot}/usr/share/package-licenses/wurlitzer/360b2fe584a00d26d9643bf330bf0d36a49257b8
-python3 -tt setup.py build  install --root=%{buildroot}
+pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
