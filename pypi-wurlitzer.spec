@@ -4,7 +4,7 @@
 #
 Name     : pypi-wurlitzer
 Version  : 3.0.2
-Release  : 24
+Release  : 25
 URL      : https://files.pythonhosted.org/packages/e8/2c/3e57755689fcf75aa25f6afba064d3891e9864ef43a24745575c86b12ad4/wurlitzer-3.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e8/2c/3e57755689fcf75aa25f6afba064d3891e9864ef43a24745575c86b12ad4/wurlitzer-3.0.2.tar.gz
 Summary  : Capture C-level output in context managers
