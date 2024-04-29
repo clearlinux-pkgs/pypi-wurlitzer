@@ -1,5 +1,5 @@
 PKG_NAME := pypi-wurlitzer
-URL = https://files.pythonhosted.org/packages/21/c1/846d54693433ba1ad33d09d47e858fba41c3f7de9b6ba15ac338c29cb6bb/wurlitzer-3.0.3.tar.gz
+URL = https://files.pythonhosted.org/packages/7b/4a/8fdefccb188c37992d8c7c5922b89aaa6cbf7d738a8798f92109ed7d4212/wurlitzer-3.1.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
